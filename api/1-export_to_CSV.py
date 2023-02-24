@@ -46,6 +46,6 @@ if __name__ == "__main__":
             export to CSV
         """
         with open('{}.csv'.format(argv[1]), mode='w') as file:
-            file_editor = csv.writer(file, delimiter=',', quoting=csv.QUOTE_ALL)
-            for k, v in tasks.items():
-             file_editor.writerow([argv[1], username, v, k])
+          file_editor = csv.writer(file, delimiter=',', quoting=csv.QUOTE_ALL)
+          for k, v in tasks.items():
+            file_editor.writerow([argv[1], username, v, k])
