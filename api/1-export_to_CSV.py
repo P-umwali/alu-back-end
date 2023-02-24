@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-    python scripts that exports data in the CSV format 
+    python scripts that exports data in the CSV format
 """
 import csv
 import json
-import requests 
-from sys import argv 
+import requests
+from sys import argv
 
 
 if __name__ == "__main__":
@@ -35,9 +35,9 @@ if __name__ == "__main__":
     """
         convert json to list of dictionaries
     """
-    user_todos = json.loads (request_todos.text)
+    user_todos = json.loads(request_todos.text)
     """
-        loop through dictionary and get completed task 
+        loop through dictionary and get completed task
     """
     for dictionary in user_todos:
         tasks.update({dictionary.get("title"): dictionary.get("completed")})
