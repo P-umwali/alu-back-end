@@ -23,7 +23,7 @@ if __name__ == "__main__":
     employee_name = employee.get("name")
 
     """
-    request user's TODO list
+    request user's TO DO list
     """
     request_todos = requests.get(
         'https://jsonplaceholder.typicode.com/users/{}/todos'.format(argv[1]))
