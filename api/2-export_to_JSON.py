@@ -13,14 +13,14 @@ if __name__ == '__main__':
     request_employee = requests.get(
          'https://jsonplaceholder.typicode.com/users/{}/'.format(argv[1]))
     """
-    convert json to dictionary 
+        convert json to dictionary
     """
     user = json.loads(request_employee.text)
     """
-    extract username
+        extract username
     """
     username = user.get("username")
-    
+
     """
         request user's TO DO list
     """
